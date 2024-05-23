@@ -16,5 +16,21 @@ while (A != C) {
 
 /* 
 Algoritmo 2
-Indica  el  valor  de  las  variables  A  y  B  al  finalizar  el  siguiente  
-algoritmo: */
+ndica los valores de las variables X, Y y Z al finalizar el siguiente 
+proceso: */
+
+let X=0;
+let Y=7;
+let Z=-4;
+
+while (X>Z) {
+    if (Y<15) {
+        Z=Z+2;
+    }
+    else {
+        Z=Z+1;
+        X=X-1;
+    }
+    Y=Y+3;
+}
+console.log("X: ", X, "Y: ", Y, "Z: ", Z);
