@@ -21,3 +21,18 @@ for (let i = 0; i < numeros.length; i++) {
 }
 /* cuenta todos los numeros que sean divisibles para 2 del total del array */
 
+/* 
+Algoritmo 2
+dado  el  siguiente  ordinograma, ¿Qué es lo que hace el algoritmo anterior?. 
+¿Qué se mostraría si la secuencia de números introducidos fuera 2, 5, 9, 3, -1, 4? */
+let suma = 0;
+let numeros2 = [2, 5, 9, 3, -1, 4];
+for (let i = 0; i < numeros2.length; i++) {
+    if (numeros2[i] > 0) {
+        suma = suma + numeros2[i];
+    }else{
+        console.log("El valor de la variable suma es:",suma);
+    }
+}
+/* suma todos los numeros ingresados hasta que exista un 
+numero negativo en este caso lleva a -1 con un resultado de 19 */
