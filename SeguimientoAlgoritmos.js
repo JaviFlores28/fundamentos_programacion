@@ -93,5 +93,23 @@ while (A2 != B2) {
   A2 = A2 - 10;
   Y2 = X3;
 }
-
+//Z nunca cambiara su valor 
 console.log("El valor de Z es: ", Z2);
+
+/* 
+Algoritmo 6
+Indica el valor al que habrá que inicializar P para que al finalizar 
+el proceso el valor que se imprima de X sea 10: 
+*/
+
+let X4 = 0;
+let P1 = 7-9; // el valor de P es 7-9 = -2
+console.log("El valor de P es: ", P1);
+while (P1 <=7) {
+  X4 = X4 + 1;
+  P1 = P1 + 1;
+  console.log("impresion numero: ", X4);
+}
+/* a P se le resta 9  debido a que son 10 pero como la comparacion es 
+menor o igual se reduce 1 y al valor de 7 se le resta 9 para cumplir 
+los 10 */
