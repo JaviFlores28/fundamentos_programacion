@@ -53,4 +53,26 @@ console.log("El valor de X es: ", X1);
 
 /*
 Algoritmo 4
-Indica el valor de la variable X al finalizar el proceso siguiente:: */
+Indica el valor de la variable X al finalizar el proceso siguiente: */
+
+let A1=15;
+let B1=15;
+let X2=100;
+let Y1=100;
+let Z1=0;
+while (A1==B1) {
+    A1=A1+3;
+    while (X2==Y1) {
+        X2=X2+Z1;
+        break;
+    }
+    B1=B1+3;
+    break;
+}
+
+/* El valor de X nunca cambia por el hecho de que z1 es igual a 0, 
+asi mismo tanto para a1 y b1 se suman el mismo valor y siempre 
+seran el mismo por ende se buclea infinitamente, se agrego brake 
+para continuar los otros procesos*/
+console.log("El valor de X es: ", X2);
+
