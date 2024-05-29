@@ -53,6 +53,17 @@ r1.question("Introduce el primer número ", (n) => {
       }
       n++;
     }
+    /* segundo caso de uso
+    valido si mi primer numero no es par para agregarle 1 y empezar a recorrer de 2 en 2 desde el primer numero par
+    if (num1 % 2 !== 0) {
+      num1++;
+    }
+    recorro de 2 en 2 hasta el segundo numero ya que el primero es par
+    let suma = 0;
+    for (let i = num1; i <= num2; i += 2) {
+      suma += i;
+    }*/
+
     console.log("la suma es: ", suma);
     r1.close();
   });
