@@ -2,13 +2,14 @@
 Realiza el algoritmo correspondiente a un programa que lea un 
 número y muestre un texto indicando si el número es o no primo
 */
+const readline = require("readline");
 
-const readline = require("readline").createInterface({
+const r1 = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
 });
 
-readline.question("Introduce un número ", (n) => {
+r1.question("Introduce un número ", (n) => {
   n = parseInt(n);
 
   if (isNaN(n)) {
@@ -30,6 +31,29 @@ readline.question("Introduce un número ", (n) => {
       }
     }
   }
+  r1.close();
+});
 
-  readline.close();
+/* Algoritmo 2 
+Diseñar un algoritmo que lea dos números y realice la suma de todos los 
+números pares comprendidos entre ambos números.
+*/
+r1.question("Introduce el primer número ", (n) => {
+  r1.question("Introduce el segundo número ", (n1) => {
+    n = parseInt(n);
+    n1 = parseInt(n1);
+    let suma = 0;
+    if (n > n1) {
+      [n, n1] = [n1, n];
+    }
+
+    while (n <= n1) {
+      if (n % 2 == 0) {
+        suma += n;
+      }
+      n++;
+    }
+    console.log("la suma es: ", suma);
+    r1.close();
+  });
 });
