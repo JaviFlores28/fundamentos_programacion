@@ -38,6 +38,7 @@ function reformarArray(array) {
   return arrayNuevo;
 }
 
+//metodo burbuja
 function ordenarArray(array) {
   let arrayNuevo = reformarArray(array);
   for (let index = 0; index < arrayNuevo.length - 1; index++) {
