@@ -11,13 +11,22 @@ const rl = readline.createInterface({
 });
 
 let count = 0;
+let sumaPares = 0;
+let sumaImpares = 0;
 
 console.log("ingrese el primer numero:");
 rl.on("line", (input) => {
-  if (count < 20) {
+  if (input % 2 == 0) {
+    sumaPares += Number(input);
+  } else {
+    sumaImpares += Number(input);
+  }
+  if (count == 19) {
+    console.log("la suma de los pares es:", sumaPares);
+    console.log("la suma de los impares es:", sumaImpares);
     rl.close();
   } else {
-    console.log("ingrese el siguiente numero:");
+    console.log("ingrese el siguiente numero:", count);
     count++;
   }
 });
