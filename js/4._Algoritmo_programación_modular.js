@@ -101,3 +101,69 @@ y funciones anteriores, mostrará la suma de los números comprendidos
 entre estos dos números y el factorial de cada uno.
 */
 
+// Función que obtiene el numero menor de dos numeros
+function numMenor(num1, num2) {
+  if (num1 < num2) {
+    return num1;
+  } else {
+    return num2;
+  }
+}
+
+// Función que obtiene el numero mayor de dos numeros
+function numMayor(num1, num2) {
+  if (num1 > num2) {
+    return num1;
+  } else {
+    return num2;
+  }
+}
+
+// Función que obtiene la suma de los numeros comprendidos entre dos numeros
+function sumaNumeros(num1, num2) {
+  let suma = 0;
+  num1 = numMenor(num1, num2);
+  num2 = numMayor(num1, num2);
+  do {
+    suma = num1 + suma;
+    num1++;
+  } while (num1 <= num2);
+  return suma;
+}
+// fórmula de la suma de una progresión aritmética con razon común 1
+function sumaNumerosProgresionAritmetica(num1, num2) {
+  let n = Math.round(Math.abs((num1 - num2) / 1)) + 1;
+  let suma = (n / 2) * (num1 + num2);
+  return suma;
+}
+
+// Función que obtiene el factorial de un numero de manera recursiva
+function factorialRecursiva(num) {
+  if (num === 0 || num === 1) {
+    return 1;
+  } else {
+    return num * factorialRecursiva(num - 1);
+  }
+}
+
+// Función que obtiene el factorial de un numero de manera iterativa
+function factorial(num) {
+  if (num === 0 || num === 1) {
+    return 1;
+  }
+  let suma = 1;
+  do {
+    suma = suma * num;
+    num--;
+  } while (num != 1);
+  return suma;
+}
+
+function main(num1, num2) {
+  console.log("La suma de los numeros comprendidos entre", num1, "y", num2, "es: ",sumaNumerosProgresionAritmetica(num1, num2));
+    console.log("El factorial de ", num1, "es: ", factorial(num1));
+    console.log("El factorial de ", num2, "es: ", factorialRecursiva(num2));
+}
+
+main(1, 12);
+
