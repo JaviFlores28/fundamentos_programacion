@@ -1,6 +1,6 @@
 # Curso de Fundamentos de Programación
 
-En este curso te enseñaremos a utilizar las estructuras lógicas de programación de forma adecuada, aplicando los principios, tanto de la programación estructurada y modular, como las técnicas de la programación orientada a objetos, empleadas en los lenguajes modernos.
+Cursi que te enseña a utilizar las estructuras lógicas de programación de forma adecuada, aplicando los principios, tanto de la programación estructurada y modular, como las técnicas de la programación orientada a objetos, empleadas en los lenguajes modernos.
 
 ## Objetivos del curso
 
