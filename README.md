@@ -1,6 +1,6 @@
 # Curso de Fundamentos de Programación
 
-Bienvenido al curso de Fundamentos de Programación. En este curso, aprenderás los conceptos básicos de la programación y adquirirás las habilidades necesarias para desarrollar programas simples.
+En este curso te enseñaremos a utilizar las estructuras lógicas de programación de forma adecuada, aplicando los principios, tanto de la programación estructurada y modular, como las técnicas de la programación orientada a objetos, empleadas en los lenguajes modernos.
 
 ## Objetivos del curso
 
@@ -20,3 +20,5 @@ Bienvenido al curso de Fundamentos de Programación. En este curso, aprenderás 
 7. Programación Modular
 8. Programación orientada a objetos
 
+## Referencias
+- Curso de Fundamentos de Programación en español: https://conectaempleo-formacion.fundaciontelefonica.com/es/web/ec-fundamentos-de-programacion-ft-ed-6
