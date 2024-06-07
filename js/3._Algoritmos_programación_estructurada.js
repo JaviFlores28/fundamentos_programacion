@@ -16,18 +16,18 @@ let sumaImpares = 0;
 
 console.log("ingrese el primer numero:");
 rl.on("line", (input) => {
+  count++;
   if (input % 2 == 0) {
     sumaPares += Number(input);
   } else {
     sumaImpares += Number(input);
   }
-  if (count == 19) {
+  if (count == 20) {
     console.log("la suma de los pares es:", sumaPares);
     console.log("la suma de los impares es:", sumaImpares);
     rl.close();
   } else {
     console.log("ingrese el siguiente numero:", count);
-    count++;
   }
 });
 
@@ -47,7 +47,8 @@ let arrayTextos = [];
 let textoMayor = "";
 console.log("ingrese el primer texto:");
 rl.on("line", (text) => {
-  if (count == 9) {
+  count++;
+  if (count == 10) {
     arrayTextos.push(text);
     for (let i = 0; i < arrayTextos.length; i++) {
       if (longitud(textoMayor) < longitud(arrayTextos[i])) {
@@ -64,16 +65,37 @@ rl.on("line", (text) => {
   } else {
     console.log("ingrese el siguiente texto:");
     arrayTextos.push(text);
-    count++;
   }
 });
-
 /* 
 Algoritmo 3
 Diseñar un algoritmo para la lectura de 20 números y que nos 
 muestre la media de todos los números leídos y cuál ha sido el 
 más pequeño
 */
+console.log("Ingrese el primer número: ");
+let suma = 0;
+let menor = Infinity;
+count = 0;
+
+rl.on("line", (numero) => {
+  let n = Number(numero);
+  suma += n;
+  count++;
+
+  if (n < menor) {
+    menor = n;
+  }
+
+  if (count == 20) {
+    let media = suma / count;
+    console.log("La media es:", media);
+    console.log("El menor es:", menor);
+    rl.close();
+  } else {
+    console.log("Ingrese el siguiente numero: ", count);
+  }
+});
 
 /* 
 Algoritmo 4
