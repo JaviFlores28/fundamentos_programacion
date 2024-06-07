@@ -26,10 +26,8 @@ r1.question("Introduce un número ", (n) => {
         console.error("El número no es primo");
         break;
       }
-      if (index == raiz) {
-        console.log("El número es primo");
-      }
     }
+    console.log("El número es primo");
   }
   r1.close();
 });

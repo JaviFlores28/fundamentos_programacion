@@ -105,3 +105,38 @@ los números, si el número introducido es negativo se le deberá
 volver a pedir de nuevo el número hasta que se introduzca uno 
 positivo.
 */
+console.log("Ingrese el primer número: ");
+count = 0;
+let cantidadPrimos = 0;
+
+rl.on("line", (numero) => {
+  count++;
+  let n = Number(numero);
+  let statusPrimo = true;
+  if (n == 2) {
+    cantidadPrimos++;
+  } else if (n > 2) {
+    let raiz = Math.round(Math.sqrt(n));
+    for (let i = 2; i <= raiz; i++) {
+      if (n % i == 0) {
+        statusPrimo = false;
+        break;
+      }
+    }
+    if (statusPrimo) {
+      cantidadPrimos++;
+    }
+  }
+  if (count == 15) {
+    console.log("La cantidad de números primos es: " + cantidadPrimos);
+
+    rl.close();
+  } else {
+    if (n < 0) {
+      count--;
+      console.log("Ingrese un número positivo: ");
+    } else {
+      console.log("Ingrese el siguiente numero: ");
+    }
+  }
+});
