@@ -41,6 +41,7 @@ function reformarArray(array) {
 //metodo burbuja
 function ordenarArray(array) {
   let arrayNuevo = reformarArray(array);
+  // hasta n-1 debido a que el ultimo elemento ya esta ordenado
   for (let index = 0; index < arrayNuevo.length - 1; index++) {
     //recorre desde la posicion de j hasta j+index+1 comparando el tamaño de los textos, suprimiendo los elementos en la ultima posicion ya ordenados
     let limitadorinterno = arrayNuevo.length - index - 1;
