@@ -39,6 +39,34 @@ más de un texto con el mismo número de caracteres, mostrará
 el último de ellos. Puedes utilizar la función Longitud para este 
 ejercicio.
 */
+function longitud(texto) {
+  return texto.length;
+}
+count = 0;
+let arrayTextos = [];
+let textoMayor = "";
+console.log("ingrese el primer texto:");
+rl.on("line", (text) => {
+  if (count == 9) {
+    arrayTextos.push(text);
+    for (let i = 0; i < arrayTextos.length; i++) {
+      if (longitud(textoMayor) < longitud(arrayTextos[i])) {
+        textoMayor = arrayTextos[i];
+      }
+    }
+    console.log(
+      "el texto mayor es:",
+      textoMayor,
+      ", y el numero de textos es:",
+      arrayTextos.length
+    );
+    rl.close();
+  } else {
+    console.log("ingrese el siguiente texto:");
+    arrayTextos.push(text);
+    count++;
+  }
+});
 
 /* 
 Algoritmo 3
