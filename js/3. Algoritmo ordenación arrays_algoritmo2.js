@@ -4,6 +4,8 @@ Dado un array de dos dimensiones de 4x6, realizar un programa que lea
 array de menor a mayor (la posición 1,1 tendrá el número más pequeño, 
 mientras que 4,6 tendrá el mayor) y se mostrará ordenado
  */
+const readline = require("readline");
+
 
 let array = new Array(4);
 for (let i = 0; i < 4; i++) {
@@ -11,7 +13,6 @@ for (let i = 0; i < 4; i++) {
 }
 
 let count = 0;
-const readline = require("readline");
 let r1 = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
