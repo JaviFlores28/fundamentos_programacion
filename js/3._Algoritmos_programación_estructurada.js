@@ -4,6 +4,23 @@ Diseña un algoritmo para la lectura de 20 números y que nos
 muestre la suma de los pares por un lado y la de los impares por 
 otro.
  */
+const readline = require("readline");
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+let count = 0;
+
+console.log("ingrese el primer numero:");
+rl.on("line", (input) => {
+  if (count < 20) {
+    rl.close();
+  } else {
+    console.log("ingrese el siguiente numero:");
+    count++;
+  }
+});
 
 /* 
 Algoritmo 2
